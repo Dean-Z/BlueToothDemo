@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BTPeripheralController">
+            <connections>
+                <outlet property="textField" destination="Cfn-XQ-UDp" id="dOY-4e-be4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6D-3y-hbk">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riN-Si-pQz">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="Mb4-WT-4zW"/>
+                                <constraint firstAttribute="height" constant="30" id="rno-n5-g95"/>
+                            </constraints>
+                            <state key="normal" title="关闭">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="e3p-Vp-VQf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14901960780000001" green="0.14117647059999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="riN-Si-pQz" firstAttribute="leading" secondItem="X6D-3y-hbk" secondAttribute="leading" constant="8" id="7xB-jt-RaJ"/>
+                        <constraint firstAttribute="height" constant="64" id="9EF-sJ-kOB"/>
+                        <constraint firstAttribute="bottom" secondItem="riN-Si-pQz" secondAttribute="bottom" constant="8" id="wFr-lN-ZvA"/>
+                    </constraints>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cfn-XQ-UDp">
+                    <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="9eh-JB-JJH"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfk-F7-RUI">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="YxA-lq-lFd"/>
+                        <constraint firstAttribute="height" constant="30" id="rLc-ie-cAn"/>
+                    </constraints>
+                    <state key="normal" title="发送"/>
+                    <connections>
+                        <action selector="sendAction:" destination="-1" eventType="touchUpInside" id="2D4-Mg-qtP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Cfn-XQ-UDp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ESv-Nd-u9e"/>
+                <constraint firstItem="Cfn-XQ-UDp" firstAttribute="top" secondItem="X6D-3y-hbk" secondAttribute="bottom" constant="35" id="FuD-gL-15x"/>
+                <constraint firstAttribute="trailing" secondItem="Cfn-XQ-UDp" secondAttribute="trailing" constant="16" id="RHJ-Zu-rIQ"/>
+                <constraint firstAttribute="trailing" secondItem="X6D-3y-hbk" secondAttribute="trailing" id="W1g-Lg-0JV"/>
+                <constraint firstItem="X6D-3y-hbk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WMk-wr-TaW"/>
+                <constraint firstItem="X6D-3y-hbk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Z92-pl-cIS"/>
+                <constraint firstItem="Hfk-F7-RUI" firstAttribute="top" secondItem="Cfn-XQ-UDp" secondAttribute="bottom" constant="20" id="b7Y-UO-FZG"/>
+                <constraint firstItem="Hfk-F7-RUI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="17" id="hjD-my-eZm"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

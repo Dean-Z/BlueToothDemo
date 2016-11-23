@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BTMessageViewController">
+            <connections>
+                <outlet property="notifyButton" destination="FNb-dq-6iX" id="CV8-dG-Qst"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="El5-77-V1o">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrV-VZ-zVM">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="46" id="aIh-yC-Jym"/>
+                                <constraint firstAttribute="height" constant="30" id="coE-ic-OrH"/>
+                            </constraints>
+                            <state key="normal" title="关闭">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="dismissAction:" destination="-1" eventType="touchUpInside" id="ObA-n6-CqY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCd-BP-rjl">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Y2s-qV-69C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.14901960780000001" green="0.14117647059999999" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vrV-VZ-zVM" secondAttribute="bottom" constant="8" id="Yrm-sb-e5u"/>
+                        <constraint firstItem="DCd-BP-rjl" firstAttribute="top" secondItem="El5-77-V1o" secondAttribute="top" constant="31" id="akB-he-4p8"/>
+                        <constraint firstItem="vrV-VZ-zVM" firstAttribute="leading" secondItem="El5-77-V1o" secondAttribute="leading" constant="8" id="btd-GB-t77"/>
+                        <constraint firstItem="DCd-BP-rjl" firstAttribute="centerX" secondItem="El5-77-V1o" secondAttribute="centerX" id="czX-Ml-yGn"/>
+                        <constraint firstAttribute="height" constant="64" id="jp3-CS-U9W"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNb-dq-6iX">
+                    <color key="backgroundColor" red="0.054901960780000002" green="0.66274509800000003" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="MII-Rt-wzl"/>
+                        <constraint firstAttribute="width" constant="120" id="b4p-vU-28f"/>
+                    </constraints>
+                    <state key="normal" title="开启Notify">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="notifyAction:" destination="-1" eventType="touchUpInside" id="iOS-5q-juS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FNb-dq-6iX" firstAttribute="centerX" secondItem="El5-77-V1o" secondAttribute="centerX" id="9DB-A8-iEO"/>
+                <constraint firstItem="FNb-dq-6iX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="J4W-IT-Eld"/>
+                <constraint firstItem="El5-77-V1o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OlV-ce-eTa"/>
+                <constraint firstItem="El5-77-V1o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="i7V-lW-7nt"/>
+                <constraint firstAttribute="trailing" secondItem="El5-77-V1o" secondAttribute="trailing" id="qAw-yb-kwd"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>
